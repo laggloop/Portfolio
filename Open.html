@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+img {width:100%;}
+#x1 {width:70%;}
+#x2 { width:80%;}
+#x3 { width:75%;}
+#x4 { width:50%;}
+#x5 { height:24px;width:80%; }
+#x6 { height:24px;width:70%; }
+#x7 { height:24px;width:80%; }
+#x8 { max-width:1400px; }
+#Nom{ color: black;background-color: white;}
+#SocMed i{ padding-right: 5em;}
+</style>
+    <title>Document</title>
+</head>
+<body class="w3-light-grey">
+<div id="root"></div>
+
+
+<script type="text/babel">
+class LeftCol extends React.Component{
+    render(){
+        return (
+            <div className="w3-third">
+    <div className="w3-white w3-text-grey w3-card-4">
+      <div className="w3-display-container">
+        <img src="said2.jpg" />
+        <div className="w3-display-bottomleft w3-container w3-text-black">
+          <h2 id="Nom">Abdelhamid Benhami</h2>
+        </div>
+      </div>
+      <div className="w3-container">
+        <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Junior Developper / Network Administrator</p>
+        <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Algiers</p>
+        <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>saidbenhami@gmail.com</p>
+        <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>+213557174235</p>
+        <hr />
+        <p className="w3-large"><b><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b></p>
+        <p>Full stack Developpement</p>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-blue" id="x1" >70%</div>
+        </div>
+        <p>Android Developpement</p>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-blue" id="x2" >
+            <div className="w3-center w3-text-white">80%</div>
+          </div>
+        </div>
+        <p>Networks</p>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-blue" id="x3" >75%</div>
+        </div>
+        <p>Cyber Security</p>
+        <div className="w3-light-grey w3-round-xlarge w3-small">
+          <div className="w3-container w3-center w3-round-xlarge w3-blue" id="x4" >50%</div>
+        </div>
+        <br />
+        <p className="w3-large w3-text-theme"><b><i className="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
+        <p>French</p>
+        <div className="w3-light-grey w3-round-xlarge">
+          <div className="w3-round-xlarge w3-blue" id="x5" ></div>
+        </div>
+        <p>English</p>
+        <div className="w3-light-grey w3-round-xlarge">
+          <div className="w3-round-xlarge w3-blue" id="x6" ></div>
+        </div>
+        <p>Arabic</p>
+        <div className="w3-light-grey w3-round-xlarge">
+          <div className="w3-round-xlarge w3-blue" id="x7" ></div>
+        </div>
+        <br />
+      </div>
+    </div><br />
+</div>
+        )
+    }
+}
+class RightCol extends React.Component{
+    render(){
+        return (
+    <div className="w3-twothird">
+    <div className="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-hashtag fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Experience</h2>
+      <div className="w3-container">
+        <h5 className="w3-opacity"><b> DMVPN Implementation / Internship (Sonatrach) </b></h5>
+        <h6 className="w3-text-blue"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - Sep 2022</h6>
+        <p> During this Internship project, we made a migration from a IPSEC VPN network to a Dynamic Multipoint VPN network</p>
+        <hr />
+      </div>
+      <div className="w3-container">
+        <h5 className="w3-opacity"><b>BEA Credit Cards Management System / Internship (Banque éxterieur d'Algérie) </b></h5>
+        <h6 className="w3-text-blue"><i className="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jun 2020</h6>
+        <p>During this project, we created a desktop application that should be used in order to facilitate the company's credit cards management</p>
+      </div>
+     
+    </div>
+
+    <div className="w3-container w3-card w3-white">
+      <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+      <div className="w3-container">
+        <h5 className="w3-opacity"><b>ICT-Towers</b></h5>
+        <h6 className="w3-text-blue"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2022</h6>
+        <p>Certificate of completion : Cyber Security Operations</p>
+        <hr />
+      </div>
+      <div className="w3-container">
+        <h5 className="w3-opacity"><b>University of Algiers I</b></h5>
+        <h6 className="w3-text-blue"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2022</h6>
+        <p>Master Degree : Networks & embedded systems</p>
+        <hr />
+      </div>
+      <div className="w3-container">
+        <h5 className="w3-opacity"><b>University of Algiers I</b></h5>
+        <h6 className="w3-text-blue"><i className="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
+        <p>Bachelor Degree : Informations system</p><br />
+      </div>
+    </div>
+  </div>
+        )
+    }
+}
+class Grid extends React.Component{
+    render(){
+        return (
+            <div className="w3-content w3-margin-top" id="x8">
+            <div className="w3-row-padding">
+<LeftCol />
+<RightCol />
+            </div>
+            </div>
+        )
+    }
+}
+class Ending extends React.Component{
+    render(){
+        return (
+            <footer className="w3-container w3-blue w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <div className="SocMed">
+<a href="https://www.facebook.com/saidbnn">  <i className="fa fa-facebook-official w3-hover-opacity w3-margin-right"> </i></a> 
+<a href="https://www.instagram.com/soubenhami"><i className="fa fa-instagram w3-hover-opacity w3-margin-right"></i></a>
+<a href="https://www.linkedin.com/in/said-benhami-3a4ab4251"><i className="fa fa-linkedin w3-hover-opacity w3-margin-right"></i></a>
+  </div>
+</footer>
+        )
+    }
+}
+class Home extends React.Component{
+    render(){
+        return (
+<div>
+<Grid />
+<Ending />
+</div>
+        )
+    }
+}
+ReactDOM.render(<Home />,document.getElementById("root"))
+</script>
+</body>
+</html>
